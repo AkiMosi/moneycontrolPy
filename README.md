@@ -74,7 +74,7 @@ License
 MIT
 
 
-**Free Software, Hell Yeah!**
+
 
    [Money Control Forum]: <https://mmb.moneycontrol.com/>
    [here]: <https://chromedriver.chromium.org/downloads>
