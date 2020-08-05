@@ -17,11 +17,12 @@ start_time = time.time()
 api = mcp.API()
 api.DRIVER_PATH = '/home/akimosi/Documents/moneycontrolPy/chromedriver'
 
-user_url = "https://mmb.moneycontrol.com/arvind151-user-profile-617276696e64313531.html"
+user_url = 'https://mmb.moneycontrol.com/arvind151-user-profile-617276696e64313531.html'
+
 user_info = api.get_user_info(
     user_url,
-    save_as_json=True,
-    file_path="",
+    # save_as_json=True,
+    # file_path="",
     following_boarders_limit=50,
     following_stocks_limit=50,
     boarders_following_limit=50,

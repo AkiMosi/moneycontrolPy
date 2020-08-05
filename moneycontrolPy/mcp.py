@@ -27,6 +27,7 @@ class API:
         self.HOME_PAGE = "https://mmb.moneycontrol.com"
         self.TOP_BOARDERS_URL = "https://mmb.moneycontrol.com/top-boarders/"
         self.DRIVER_PATH = ""
+        self.BROWSER_VIEW = False
 
     def _init_driver(self, WEB_DRIVER_PATH):
         """
@@ -50,7 +51,8 @@ class API:
         options = webdriver.ChromeOptions()
         options.add_argument("--ignore-certificate-errors")
         options.add_argument("--incognito")
-        # options.add_argument("--headless")
+        if self.BROWSER_VIEW is False:
+            options.add_argument("--headless")
         driver = webdriver.Chrome(WEB_DRIVER_PATH, options=options)
 
         return driver
