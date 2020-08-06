@@ -79,7 +79,7 @@ class API:
 
         """
         driver = self._init_driver(self.DRIVER_PATH)
-        driver.implicitly_wait(SCROLL_PAUSE_TIME)
+        driver.implicitly_wait(1)
         driver.get(url)
 
         if SCROLL_PAUSE_TIME or limit is not None:

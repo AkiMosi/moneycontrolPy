@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="moneycontrolPy",
-    version="0.0.4",
+    version="0.0.5",
     author="Akileshvar A",
     author_email="akileshvar008@gmail.com",
     description="A python API for Money Control Forum",
